@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>Registration Website</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+    
+    <body>
+        <h3>Registration Form</h3>
+        <fieldset>
+            <form id="RegistrationForm" name="Registration_Form" onsubmit="return ValidateForm()">
+                <label>FirstName:</label>
+                <input type="text" name="fname" placeholder="Enter Firstname" required><br><br>
+                <label>LastName:</label>
+                <input type="text" name="lname" placeholder="Enter Lastname" required><br><br>
+                <label>Phone Number:</label>
+                <input type="tel" name="phn_no" placeholder="Phone Number" minlength=10 maxlength=10 required><br><br>
+                <label>Email:</label>
+                <input type="email" name="email" placeholder="Enter Email" required><br><br>
+                <label>Password:</label>
+                <input type="password" name="password" placeholder="Enter Password" minlength="8" required><br><br>
+                <label>ReEnter Password:</label>
+                <input type="password" name="re-enter_password" placeholder="ReEnter Password" minlength="8" required>
+                <span id="msg"></span><br><br>
+                <input type="submit" name="register" value="Register">
+            </form> 
+        </fieldset>
+    </body>
+</html>

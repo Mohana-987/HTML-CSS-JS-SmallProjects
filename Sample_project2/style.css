@@ -1,0 +1,23 @@
+label{
+    padding-top: 10px;
+    width:80px;
+    display: inline-block;
+}
+h3{
+    text-align: center;
+}
+fieldset{
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-right:520px;
+    margin-left: 520px;
+}
+body{
+    padding-top: 5%;
+    background-image: url(img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+form{
+    text-align: center;
+}
