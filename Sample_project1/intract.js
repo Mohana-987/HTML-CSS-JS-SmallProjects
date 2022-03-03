@@ -1,0 +1,12 @@
+document.getElementById("icon").onclick=function(){
+    if(document.getElementById("mySong").paused){
+        document.getElementById("mySong").play();
+        document.getElementById("icon").src="images/pause.png";
+    }else{
+        document.getElementById("mySong").pause();
+        document.getElementById("icon").src="images/play.png";
+    }
+}
+/*document.getElementById("icon").onclick=function(){
+    document.getElementById("mySong").play();
+}*/
