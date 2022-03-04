@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Registration</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="script.js"></script>
+    </head>   
+
+    <body>
+        <div class="top">
+            <h3>Register for the certification course to become expert in FrontEnd (or) BackEnd (or) Full-Stack</h3>
+        </div>
+        <fieldset class="bottom">
+        <form id="form" name="myForm" onsubmit="return checkV()">
+
+            <label>Name:</label>
+            <input type="text" name="name" placeholder="Name" required><br><br>
+
+            <label>Email:</label>
+            <input type="email" name="email" placeholder="Email" required><br><br>
+
+            <label>Phn Number:</label>
+            <input type="tel" name="phn_no" placeholder="Phone Number" minlength=10 maxlength=10 required><br><br>
+
+            <label>Gender</label><br>
+                <input placeholder="radio" type="radio" name="gender" value="Male" required>
+                <label>Male</label><br>
+                <input placeholder="radio" type="radio" name="gender" value="Female">
+                <label>Female</label><br>
+                <input placeholder="radio"type="radio" name="gender" value="Others">
+                <label>Others</label><br></br>
+
+            <label>Course</label>
+            <select name="course" id="course" required>
+                <option value="" selected disbaled>-select-</option>
+            </select><br><br>
+
+            <label>Technology</label>
+            <select name="technology" id="technology" required>
+                <option value="" selected disabled>-select-</option>
+            </select><br><br>
+            <label>Address:</label>
+            <textarea name="address" placeholder="Address" required></textarea><br><br>
+            <input placeholder="submit" valu="Submit"type="submit" >
+        </form>
+    </fieldset>
+    <table id="table" style="display: none; width: fit-content">
+        <tr>
+            <th colspan="7">Registation details</th>
+        </tr>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone Number</th>
+            <th>Gender</th>
+            <th>Course</th>
+            <th>Technology</th>
+            <th>Address</th>
+        </tr>
+    </table>
+    </body>
+</html>
